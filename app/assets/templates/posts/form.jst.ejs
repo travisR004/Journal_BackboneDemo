@@ -1,0 +1,13 @@
+<form id="edit-form">
+  <label>
+    title
+    <input type="text" name="post[title]" value="<%= post.escape("title") %>">
+  </label>
+
+  <label>
+    body
+    <input type="text" name="post[body]" value="<%= post.escape("body") %>">
+  </label>
+
+  <button class="edit">Submit</button>
+</form>
