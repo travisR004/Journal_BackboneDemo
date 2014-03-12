@@ -27,7 +27,6 @@ window.Journal.Views.PostShowView = Backbone.View.extend({
   editBody: function(event){
     var rendered = this.editbox({ attr: this.model.escape("body"), name: "body" });
     $('#body').html(rendered);
-    $('#body').focus();
     return this;
   },
 
